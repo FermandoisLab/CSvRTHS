@@ -2,6 +2,15 @@
 
 ## Description
 
+## Requirements
+
+- Windows ?
+- Matlab version ?
+- Simulink Real Time ?
+- OpenSees ?
+- OpenFresco ?
+- Something else?
+
 ## Instructions
 
 For the execution of this model, the following instructions must be followed.
