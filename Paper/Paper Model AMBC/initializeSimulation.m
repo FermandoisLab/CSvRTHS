@@ -2,10 +2,8 @@
 %
 % created by MTS
 % modified by Andreas Schellenberg (andreas.schellenberg@gmail.com) 11/2004
+% modified by Diego Mera Muñoz (diego.mera@sansano.usm.cl) 03/2021
 %
-% $Revision: 385 $
-% $Date: 2015-03-01 23:25:17 +0330 (Sun, 01 Mar 2015) $
-% $URL: svn://peera.berkeley.edu/usr/local/svn/OpenFresco/trunk/EXAMPLES/OneBayFrame/ControlSystem/initializeSimulation.m $
 
 clear;
 % close all;
