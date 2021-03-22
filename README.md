@@ -1,4 +1,4 @@
-# ClientServerRTHS
+# Client-Server application for vRTHS
 
 ## Description
 
