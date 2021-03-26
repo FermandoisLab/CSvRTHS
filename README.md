@@ -9,7 +9,7 @@ Reference structure
 
 ## Requirements
 
-- Windows ?
+- Windows ? Windows 7 o superior
 - Matlab version ?
 - Simulink Real Time ?
 - OpenSees ?
