@@ -4,7 +4,8 @@
 
 Reference structure
 
-![](figures/PlantSW2.png)
+<img src="figures/PlantSW2.PNG" alt="Reference Structure" width="300"/>
+
 
 ## Requirements
 
