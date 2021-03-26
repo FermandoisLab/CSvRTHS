@@ -2,6 +2,10 @@
 
 ## Description
 
+Reference structure
+
+![](figures/PlantSW2.png)
+
 ## Requirements
 
 - Windows ?
@@ -14,6 +18,8 @@
 ## Instructions
 
 For the execution of this model, the following instructions must be followed.
+
+### Instalation
 
 ### Simulation
 
