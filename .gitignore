@@ -1,0 +1,4 @@
+# MEX files
+*.mex*
+# Simulink cache
+*.slxc
