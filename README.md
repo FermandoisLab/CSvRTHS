@@ -71,6 +71,7 @@ Then, users should see the following message:
     mex -setup FORTRAN
 
 To compile an S function in C language, enter the following command in the MATLAB command window:
+
     mex sfun_name.c
 
 where sfun_name.c is the name of the C source file. The mex command will generate the compiler and linker commands necessary to produce the S-Function executable file. In the event of an error in the compiler, these will be displayed in the MATLAB windows.
