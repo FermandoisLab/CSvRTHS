@@ -4,7 +4,7 @@
 
 Reference structure
 
-<img src="figures/NSES.png" alt="Reference Structure" width="600"/>
+<img src="figures/NSES.png" alt="Reference Structure" width="900"/>
 
 
 ## Requirements
