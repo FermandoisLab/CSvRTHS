@@ -26,9 +26,9 @@ WARNING: Failing to run a real-time simulation without having installed the kern
     The MATLAB Command Window displays one of these messages: 
     users are going to install the Simulink Desktop Real-Time kernel. Do you want to proceed? [y] :
 4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
-5. After installing the kernel, check the installation by typing: 
+5. After installing the kernel, check the installation by typing:
 
-        rtwho 
+       rtwho 
     
 If installed successfully, users should see the following message: 
     
