@@ -2,7 +2,7 @@
 
 ## Description
 
-Reference structure
+The structure to be solved is shown below, together with the selected numerical and experimental substructures.
 
 <img src="figures/NSES.png" alt="Reference Structure" width="800"/>
 
