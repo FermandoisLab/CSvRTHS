@@ -4,7 +4,7 @@
 
 Reference structure
 
-<img src="figures/NSES.png" alt="Reference Structure" width="900"/>
+<img src="figures/NSES.png" alt="Reference Structure" width="800"/>
 
 
 ## Requirements
@@ -14,6 +14,12 @@ Reference structure
 - Simulink Desktop real-time
 - OpenSees version 3.1.0 of 2016 - 64 bits
 - OpenFresco version 2.7.1 of 2006 - 64 bits
+
+## Instructions
+
+For the execution of this model, the following instructions must be followed.
+
+### Instalation
 
 ## Real-time desktop installation
 
@@ -69,13 +75,9 @@ To compile an S function in C language, enter the following command in the MATLA
 
 where sfun_name.c is the name of the C source file. The mex command will generate the compiler and linker commands necessary to produce the S-Function executable file. In the event of an error in the compiler, these will be displayed in the MATLAB windows.
 
-## Instructions
-
-For the execution of this model, the following instructions must be followed.
-
-### Instalation
-
 ### Simulation
+
+<img src="figures/Loops.png" alt="Reference Structure" width="800"/>
 
 Before running, the Simulink model "HybridControllerD2D2" must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
 
