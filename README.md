@@ -4,7 +4,7 @@
 
 Reference structure
 
-<img src="figures/PlantSW2.PNG" alt="Reference Structure" width="300"/>
+<img src="figures/NSES.PNG" alt="Reference Structure" width="300"/>
 
 
 ## Requirements
