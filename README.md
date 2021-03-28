@@ -56,7 +56,7 @@ If you are used to working with other editors such as Visual Studio, it will be 
     
 Then, users should see the following message: 
     
-    MEX configured to use 'xxxx' for C language compilation. (xxxx indicates users’ C compiler that it's selected
+    MEX configured to use 'xxxx' for C language compilation. (xxxx indicates users’ C compiler that it's selected)
     
     To choose a different C compiler, select one from the following:
     
