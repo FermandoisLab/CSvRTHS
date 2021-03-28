@@ -27,10 +27,15 @@ WARNING: Failing to run a real-time simulation without having installed the kern
     users are going to install the Simulink Desktop Real-Time kernel. Do you want to proceed? [y] :
 4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
 5. After installing the kernel, check the installation by typing: 
+
     rtwho 
+    
     If installed successfully, users should see the following message: 
+    
     Simulink Desktop Real-Time version xxxx (C) 
+    
     The Mathworks, Inc. 1994-20xx 
+    
     Running on 64-bit computer, (xxxx indicates users’ system version and year)
 
 If their computer crashes after installing the kernel there is a patch available from Mathworks that needs to be installed. This can be downloaded directly from the Mathworks website (https://www.mathworks.com/support/bugreports/1719571).
