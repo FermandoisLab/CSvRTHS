@@ -19,9 +19,9 @@ Reference structure
 
 For the execution of this model, the following instructions must be followed.
 
-### Instalation
+## Instalation
 
-## Real-time desktop installation
+### Real-time desktop installation
 
 The Simulink Desktop Real-Time software requires a real-time kernel that interfaces with the operating system. Users may refere to https://www.mathworks.com/help/sldrt/ug/real-time-windows-target-kernel.html where detailed instructions on how to install Real-Time Kernel are provided. The following paragraph is a summary of the instruction provided by MathWorks. 
 WARNING: Failing to run a real-time simulation without having installed the kernel may cause a major crash of the computer due to insuﬃcient computational resources that may lead to loss of data or unsaved work.
@@ -46,7 +46,7 @@ If installed successfully, users should see the following message:
 
 If their computer crashes after installing the kernel there is a patch available from Mathworks that needs to be installed. This can be downloaded directly from the Mathworks website (https://www.mathworks.com/support/bugreports/1719571).
 
-## Mex compiler
+### Mex compiler
 
 If you do not have a Windows operating system, it will be necessary to compile the MEX files again. This can be done directly from Matlab using Matlab's own compiler, MinGW64. To use it must be installed as a complement to Matlab. Information regarding this is available at the following link: https://www.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler
 
