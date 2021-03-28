@@ -28,9 +28,9 @@ WARNING: Failing to run a real-time simulation without having installed the kern
 4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
 5. After installing the kernel, check the installation by typing: 
 
-    rtwho 
+        rtwho 
     
-    If installed successfully, users should see the following message: 
+If installed successfully, users should see the following message: 
     
     Simulink Desktop Real-Time version xxxx (C) 
     
@@ -48,7 +48,7 @@ If you are used to working with other editors such as Visual Studio, it will be 
 
     mex -setup
     
-    Then, users should see the following message: 
+Then, users should see the following message: 
     
     MEX configured to use 'xxxx' for C language compilation. (xxxx indicates users’ C compiler that it's selected
     
