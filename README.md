@@ -45,15 +45,23 @@ If their computer crashes after installing the kernel there is a patch available
 If you do not have a Windows operating system, it will be necessary to compile the MEX files again. This can be done directly from Matlab using Matlab's own compiler, MinGW64. To use it must be installed as a complement to Matlab. Information regarding this is available at the following link: https://www.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler
 
 If you are used to working with other editors such as Visual Studio, it will be necessary to modify the selected compiler to work in Matlab. For that, the following is written in the command window:
+
     mex -setup
+    
     Then, users should see the following message: 
+    
     MEX configured to use 'xxxx' for C language compilation. (xxxx indicates users’ C compiler that it's selected
+    
     To choose a different C compiler, select one from the following:
+    
     MinGW64 Compiler (C)  mex -setup:'folder where the compiler is located on your computer' C
+    
     Microsoft Visual C++ 2019 (C)  mex -setup:folder where the compiler is located on your computer C
     
     To choose a different language, select one from the following: 
+    
     mex -setup C++ 
+    
     mex -setup FORTRAN
 
 To compile an S function in C language, enter the following command in the MATLAB command window:
