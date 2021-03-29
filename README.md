@@ -17,8 +17,6 @@ It is important to mention that these substructures, numerical and experimental,
 - OpenSees version 3.1.0 of 2016 - 64 bits
 - OpenFresco version 2.7.1 of 2006 - 64 bits
 
-NOTE: The CSvRTHS_Client file was created with Matlab 2020b, however, previous versions were created until 2017, called CSvRTHS_Client_xxxxa, where xxxx was the year of the version.
-
 ## Instructions
 
 For the execution of this model, the following instructions must be followed.
