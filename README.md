@@ -23,6 +23,24 @@ For the execution of this model, the following instructions must be followed.
 
 ## Instalation
 
+### OpenSees
+
+OpenSees uses Tcl / Tk, a general-purpose scripting language that has been extended with commands for OpenSees. You need to download and install Tcl / Tk before you can use OpenSees. This file can be found at the following link:
+
+    https://www.tcl.tk/software/tcltk/8.5.html
+
+I recommend downloading tcl86. First you enter the link named as follows:
+
+    Download font versions of Tcl / Tk 8.5.19
+
+Once the tcl version is downloaded, it must be activated. For this we enter the following link:
+
+    Download ActiveTcl 8.5.19 binaries
+
+With this, it should be possible to use OpenSees and all its features. In any case, working directly from the command console can be uncomfortable, so I recommend working with an editor. I recommend using CypressEditor. This can be found at the following link:
+
+    https://cypress.hrshojaie.com/
+
 ### Real-time desktop installation
 
 The Simulink Desktop Real-Time software requires a real-time kernel that interfaces with the operating system. Users may refere to https://www.mathworks.com/help/sldrt/ug/real-time-windows-target-kernel.html where detailed instructions on how to install Real-Time Kernel are provided. The following paragraph is a summary of the instruction provided by MathWorks. 
