@@ -92,7 +92,7 @@ Before running, the Simulink model "HybridControllerD2D2" must be open, the addr
 ### Post-processing
 
 To check the correct performance of the vRTHS, the following steps must be followed:
-1. Open the file called "PlotOutput" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
+1. Open the file called "PlotOutput.m" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
 2. If everything was executed correctly, a series of graphs will be shown together with some tables with performance criteria.
 
 ## How to cite
