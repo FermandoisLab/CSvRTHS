@@ -99,6 +99,6 @@ To check the correct performance of the vRTHS, the following steps must be follo
 1. Open the file called "PlotOutput.m" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
 2. If everything was executed correctly, a series of graphs will be shown together with some tables with performance criteria.
 
-<img src="figures/targetvsmeasured.png" alt="Results" width="800"/>
+<img src="figures/targetvsmeasured.jpg" alt="Results" width="800"/>
 
 ## How to cite
