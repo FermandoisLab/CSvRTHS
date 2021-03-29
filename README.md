@@ -82,7 +82,7 @@ where sfun_name.c is the name of the C source file. The mex command will generat
 
 The implementation of CSvRTHS is illustrated in the next figure. Briefly, the first requirement is to start the ES-FE server, which is waiting for the resolution to start. Then, Simulink Client must be executed (The integration scheme used in Simulink was ode8 (Dormand-Prince)), which requests a displacement to OpenSees for the execution of the first temporary step. So finally, the OpenSees file (NS-FE Server) that contains the NS and where the integration of the equation of motion is performed is executed. An explicit integration scheme, as Newmark Explicit, is recommended. Here the sampling intervals used for the fast and slow processes are 1/1024 and 2/100 [s], respectively. To summarize, the loops need to be run from the inside to the outside layers: (1) ES-FE server (green); (2) Simulink client (orange); and (3) the NS-FE server (blue-gray).
 
-<img src="figures/Loops.png" alt="Reference Structure" width="800"/>
+<img src="figures/Loops.png" alt="Loops of resolution" width="800"/>
 
 Before running, the Simulink model "HybridControllerD2D2" must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
 
@@ -98,5 +98,7 @@ Before running, the Simulink model "HybridControllerD2D2" must be open, the addr
 To check the correct performance of the vRTHS, the following steps must be followed:
 1. Open the file called "PlotOutput.m" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
 2. If everything was executed correctly, a series of graphs will be shown together with some tables with performance criteria.
+
+<img src="figures/targetvsmeasured.png" alt="Results" width="800"/>
 
 ## How to cite
