@@ -25,7 +25,7 @@ For the execution of this model, the following instructions must be followed.
 
 ### OpenSees
 
-OpenSees uses Tcl / Tk, a general-purpose scripting language that has been extended with commands for OpenSees. You need to download and install Tcl / Tk before you can use OpenSees. This file can be found at the following link:
+OpenSees uses Tcl/Tk (Tool Command Language), a general-purpose scripting language that has been extended with commands for OpenSees. You need to download and install Tcl / Tk before you can use OpenSees. This file can be found at the following link:
 
     https://www.tcl.tk/software/tcltk/8.5.html
 
@@ -40,6 +40,10 @@ Once the tcl version is downloaded, it must be activated. For this we enter the 
 With this, it should be possible to use OpenSees and all its features. In any case, working directly from the command console can be uncomfortable, so I recommend working with an editor. I recommend using CypressEditor. This can be found at the following link:
 
     https://cypress.hrshojaie.com/
+
+For users who are new at OpenSees, I recommend visiting the following page. Here you can find manuals, examples, and a forum.
+
+    https://opensees.berkeley.edu/wiki/index.php/OpenSees_User
 
 ### Real-time desktop installation
 
