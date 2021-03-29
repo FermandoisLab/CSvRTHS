@@ -99,6 +99,11 @@ To check the correct performance of the vRTHS, the following steps must be follo
 1. Open the file called "PlotOutput.m" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
 2. If everything was executed correctly, a series of graphs will be shown together with some tables with performance criteria.
 
+Let J2 be the Normalized root mean square of the
+tracking error and τ the time delay between the input and output signals evaluated at the equivalent frequency.
+
+In the example provided, the measured displacement is compared to the target displacement for the evaluation of the compensation method. With J2  = 0.866 [%] and τ = 0.0075 [msec], a good tracking is achieved, which allows a stable test. Furthermore, it is noticeable that practically all the error obtained (J2) is due to the noise considered in the sensors at the time of measurement.
+
 <img src="figures/targetvsmeasured.jpg" alt="Results" width="800"/>
 
 ## How to cite
