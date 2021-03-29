@@ -84,7 +84,7 @@ The implementation of CSvRTHS is illustrated in the next figure. Briefly, the fi
 
 <img src="figures/Loops.png" alt="Loops of resolution" width="800"/>
 
-Before running, the Simulink model "CSvRTHS_Client" must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
+Before running, the Simulink model "CSvRTHS_Client" (located at the source file) must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
 
 1. Open OpenFresco and type "source ServerBeam1_TCP.tcl"
 2. Open OpenFresco and type "source ServerCol2_TCP.tcl"
