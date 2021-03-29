@@ -2,7 +2,9 @@
 
 ## Description
 
-The structure to be solved is shown below, together with the selected numerical and experimental substructures.
+The example provided here is a four-story planar frame with three bays, with a total of 52 degrees of freedom (16 lateral, 16 vertical, and 20 rotational). The beams are modeled with linear elastic frame elements, while the columns are modeled with frame elements using Giuffre-Menegotto-Pinto steel material with isotropic strain hardening with an initial stiffness of 5.6 [kip/in]. Consequently, the first-mode fundamental period is T1=1.9 [s]. The reference structure is divided into the numerical substructure (NS) and experimental substructure (ES). One bay of the first story is taken as the ES, while the rest is modeled as NS. Since it is intended to work only with a uniaxial actuator, the boundary degrees of freedom are set to be only horizontal displacements.
+
+It is important to mention that these substructures, numerical and experimental, can be replaced by the substructures desired by the user.
 
 <img src="figures/NSES.png" alt="Reference Structure" width="800"/>
 
@@ -78,7 +80,7 @@ where sfun_name.c is the name of the C source file. The mex command will generat
 
 ### Simulation
 
-The implementation of CSvRTHS is illustrated in the next figure. Briefly, the first requirement is to start the ES-FE server, which is waiting for the resolution to start. Then, Simulink Client must be executed (The integration scheme used in Simulink was ode8 (Dormand-Prince)), which requests a displacement to OpenSees for the execution of the first temporary step. So finally, the OpenSees file (NS-FE Server) that contains the NS and where the integration of the equation of motion is performed is executed. An explicit integration scheme, as Newmark Explicit, is recommended. Here the sampling intervals used for the fast and slow processes are 1/1024 and 2/100 [s], respectively (i.e., 0<T_{Fast}<T_{Slow}). To summarize, the loops need to be run from the inside to the outside layers: (1) ES-FE server (green); (2) Simulink client (orange); and (3) the NS-FE server (blue-gray).
+The implementation of CSvRTHS is illustrated in the next figure. Briefly, the first requirement is to start the ES-FE server, which is waiting for the resolution to start. Then, Simulink Client must be executed (The integration scheme used in Simulink was ode8 (Dormand-Prince)), which requests a displacement to OpenSees for the execution of the first temporary step. So finally, the OpenSees file (NS-FE Server) that contains the NS and where the integration of the equation of motion is performed is executed. An explicit integration scheme, as Newmark Explicit, is recommended. Here the sampling intervals used for the fast and slow processes are 1/1024 and 2/100 [s], respectively. To summarize, the loops need to be run from the inside to the outside layers: (1) ES-FE server (green); (2) Simulink client (orange); and (3) the NS-FE server (blue-gray).
 
 <img src="figures/Loops.png" alt="Reference Structure" width="800"/>
 
