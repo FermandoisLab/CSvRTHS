@@ -129,3 +129,4 @@ In the example provided, the measured displacement is compared to the target dis
 <img src="figures/targetvsmeasured.jpg" alt="Results" width="800"/>
 
 ## How to cite
+Mera, D., & Fermandois, G. (2021). "Client-Server application for vRTHS." https://doi.org/10.5281/zenodo.4646490.
