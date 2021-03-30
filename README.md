@@ -12,10 +12,10 @@ It is important to mention that these substructures, numerical and experimental,
 ## Requirements
 
 - Windows 7 or superior
-- Matlab version 2020b or superior
-- Simulink Desktop real-time
-- OpenSees version 3.1.0 of 2016 - 64 bits
-- OpenFresco version 2.7.1 of 2006 - 64 bits
+- Matlab R2020b or superior
+- Simulink Desktop Real-time
+- OpenSees version 3.1.0 (2016) - 64 bits
+- OpenFresco version 2.7.1 (2006) - 64 bits
 
 ## Instructions
 
