@@ -2,10 +2,10 @@
 
 ### C source code
 
-- File 1. Description
-- File 2. Description
+- `File1.c`. Description
+- `File2.c`. Description
 
 ### Dynamic Link Libraries (DLL)
 
-- File 1. Description
-- File 2. Description
+- `File1.dll`. Description
+- `File2.dll`. Description
