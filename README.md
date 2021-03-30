@@ -53,8 +53,7 @@ The Simulink Desktop Real-Time software requires a real-time kernel that interfa
 WARNING: Failing to run a real-time simulation without having installed the kernel may cause a major crash of the computer due to insuﬃcient computational resources that may lead to loss of data or unsaved work.
 
 1. Previously save all data and work and close all applications except MATLAB.
-2. In the MATLAB Command Window, type: 
-    sldrtkernel -install 
+2. In the MATLAB Command Window, type: `sldrtkernel -install`
     The MATLAB Command Window displays one of these messages: 
     users are going to install the Simulink Desktop Real-Time kernel. Do you want to proceed? [y] :
 4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
@@ -100,7 +99,7 @@ To compile an S function in C language, enter the following command in the MATLA
 
     mex sfun_name.c
 
-where sfun_name.c is the name of the C source file. The mex command will generate the compiler and linker commands necessary to produce the S-Function executable file. In the event of an error in the compiler, these will be displayed in the MATLAB windows.
+where `sfun_name.c` is the name of the C source file. The mex command will generate the compiler and linker commands necessary to produce the S-Function executable file. In the event of an error in the compiler, these will be displayed in the MATLAB windows.
 
 ### Simulation
 
@@ -108,19 +107,19 @@ The implementation of CSvRTHS is illustrated in the next figure. Briefly, the fi
 
 <img src="figures/Loops.png" alt="Loops of resolution" width="800"/>
 
-Before running, the Simulink model "CSvRTHS_Client" (located at the source file) must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
+Before running, the Simulink model `CSvRTHS_Client.slx` (located at the source file) must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
 
-1. Open OpenFresco and type "source ServerBeam1_TCP.tcl"
-2. Open OpenFresco and type "source ServerCol2_TCP.tcl"
-3. Open OpenSees and type "source ServerCol1_Adapter.tcl"
-4. Execute the Simulink model "CSvRTHS_Client", it will load and will be waiting. Additionally, a tab will be displayed showing the movement of the column named Col1. This is optional, if you want to delete you must modify the ServerCol1_Adapter.
-5. Open OpenSees and type "source SubEstNum.tcl". This will start the process and a message will be displayed in the OpenSees window. You must press "Enter" three times for vRTHS to start.
+1. Open OpenFresco and type `source ServerBeam1_TCP.tcl`
+2. Open OpenFresco and type `source ServerCol2_TCP.tcl`
+3. Open OpenSees and type `source ServerCol1_Adapter.tcl`
+4. Execute the Simulink model `CSvRTHS_Client.slx`, it will load and will be waiting. Additionally, a tab will be displayed showing the movement of the column named Col1. This is optional, if you want to delete you must modify the ServerCol1_Adapter.
+5. Open OpenSees and type `source SubEstNum.tcl`. This will start the process and a message will be displayed in the OpenSees window. You must press "Enter" three times for vRTHS to start.
 6. Once the simulation is finished, the OpenSees and OpenFresco windows will close. Model execution in Simulink should be stopped.
 
 ### Post-processing
 
 To check the correct performance of the vRTHS, the following steps must be followed:
-1. Open the file called "PlotOutput.m" located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
+1. Open the file called `PlotOutput.m` located in the output folder (folder created by the NS in OpenSees, the name its selectec by the user).
 2. If everything was executed correctly, a series of graphs will be shown together with some tables with performance criteria.
 
 Let J2 be the Normalized root mean square of the
