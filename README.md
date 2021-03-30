@@ -27,9 +27,7 @@ For the execution of this model, the following instructions must be followed.
 
 ### OpenSees
 
-OpenSees uses Tcl/Tk (Tool Command Language), a general-purpose scripting language that has been extended with commands for OpenSees. You need to download and install Tcl / Tk before you can use OpenSees. This file can be found at the following link:
-
-    https://www.tcl.tk/software/tcltk/8.5.html
+OpenSees uses Tcl/Tk (Tool Command Language), a general-purpose scripting language that has been extended with commands for OpenSees. You need to download and install Tcl/Tk before you can use OpenSees. This file can be found at the following link: [https://www.tcl.tk/software/tcltk/8.5.html](https://www.tcl.tk/software/tcltk/8.5.html "Tcl/Tk install")
 
 I recommend downloading tcl86. First you enter the link named as follows:
 
@@ -53,20 +51,18 @@ The Simulink Desktop Real-Time software requires a real-time kernel that interfa
 WARNING: Failing to run a real-time simulation without having installed the kernel may cause a major crash of the computer due to insuﬃcient computational resources that may lead to loss of data or unsaved work.
 
 1. Previously save all data and work and close all applications except MATLAB.
-2. In the MATLAB Command Window, type: `sldrtkernel -install`
-    The MATLAB Command Window displays one of these messages: 
-    users are going to install the Simulink Desktop Real-Time kernel. Do you want to proceed? [y] :
-4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
-5. After installing the kernel, check the installation by typing:
+2. In the MATLAB Command Window, type: `sldrtkernel -install`. The MATLAB Command Window displays one of these messages:
 
-       rtwho 
+       You are going to install the Simulink Desktop Real-Time kernel.
+       Do you want to proceed? [y] :
+
+4. Type y to continue installing the kernel, or n to cancel without changing the current conﬁguration.
+5. After installing the kernel, check the installation by typing: `rtwho` 
     
 If installed successfully, users should see the following message: 
     
     Simulink Desktop Real-Time version xxxx (C) 
-    
     The Mathworks, Inc. 1994-20xx 
-    
     Running on 64-bit computer, (xxxx indicates users’ system version and year)
 
 If their computer crashes after installing the kernel there is a patch available from Mathworks that needs to be installed. This can be downloaded directly from the Mathworks website (https://www.mathworks.com/support/bugreports/1719571).
@@ -112,7 +108,7 @@ Before running, the Simulink model `CSvRTHS_Client.slx` (located at the source f
 1. Open OpenFresco and type `source ServerBeam1_TCP.tcl`
 2. Open OpenFresco and type `source ServerCol2_TCP.tcl`
 3. Open OpenSees and type `source ServerCol1_Adapter.tcl`
-4. Execute the Simulink model `CSvRTHS_Client.slx`, it will load and will be waiting. Additionally, a tab will be displayed showing the movement of the column named Col1. This is optional, if you want to delete you must modify the ServerCol1_Adapter.
+4. Execute the Simulink model `CSvRTHS_Client.slx`, it will load and will be waiting. Additionally, a tab will be displayed showing the movement of the column named Col1. This is optional, if you want to delete you must modify the `ServerCol1_Adapter.tcl`.
 5. Open OpenSees and type `source SubEstNum.tcl`. This will start the process and a message will be displayed in the OpenSees window. You must press "Enter" three times for vRTHS to start.
 6. Once the simulation is finished, the OpenSees and OpenFresco windows will close. Model execution in Simulink should be stopped.
 
