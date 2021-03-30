@@ -106,9 +106,9 @@ The implementation of CSvRTHS is illustrated in the next figure. Briefly, the fi
 Before running, the Simulink model `CSvRTHS_Client.slx` (located at the source file) must be open, the address in Matlab must match the address where this file is located since to start it calls a function called "initializeSimulation".
 
 1. Open OpenFresco and type `source ServerBeam1_TCP.tcl`
-2. Open OpenFresco and type `source ServerCol2_TCP.tcl`
-3. Open OpenSees and type `source ServerCol1_Adapter.tcl`
-4. Execute the Simulink model `CSvRTHS_Client.slx`, it will load and will be waiting. Additionally, a tab will be displayed showing the movement of the column named Col1. This is optional, if you want to delete you must modify the `ServerCol1_Adapter.tcl`.
+2. Open OpenFresco and type `source ServerCol1_TCP.tcl`
+3. Open OpenFresco and type `source ServerCol2_TCP.tcl`
+4. Execute the Simulink model `CSvRTHS_Client.slx`, it will load and will be waiting.
 5. Open OpenSees and type `source SubEstNum.tcl`. This will start the process and a message will be displayed in the OpenSees window. You must press "Enter" three times for vRTHS to start.
 6. Once the simulation is finished, the OpenSees and OpenFresco windows will close. Model execution in Simulink should be stopped.
 
