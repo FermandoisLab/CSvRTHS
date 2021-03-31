@@ -2,12 +2,13 @@
 
 ### Simulink model
 
-- `File1.slx`. Description
+- `CSvRTHS_Client.slx`. Description: Simulink model that includes the actuator model, compensation method, corrective predictor and necessary communication blocks.
 
 ### Matlab scripts and functions
 
-- `File1.m`. Description
-- `File2.m`. Description
+- `initializeSimulation.m`. Description
+- `Freq_Resp_Tong.m`. Description
+- `PlotOutput.m`. Description 
 
 ### OpenSees TCL scripts
 
