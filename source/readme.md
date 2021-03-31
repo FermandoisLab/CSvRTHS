@@ -12,27 +12,37 @@
 
 ### OpenSees TCL scripts
 
-- `File1.tcl`. Description
-- `File2.tcl`. Description
+- `ServerBeam1_TCP.tcl`. Description
+- `ServerCol1_TCP.tcl`. Description
+- `ServerCol2_TCP.tcl`. Description
+- `SubEstNum.tcl`. Description
 
 ### C source code & headers
 
-- `File1.c`. Description
-- `File2.c`. Description
-- `File1.h`. Description
+- `PredictorCorrector.c`. Description
+- `SFun_OPFConnect.c`. Description
+- `TCPSocket.c`. Description
+- `PredictorCorrector.h`. Description
 - `File2.h`. Description
 
 ### Executable files (EXE)
 
-- `File1.exe`. Description
-- `File2.exe`. Description
+- `OpenSees.exe`. Description: OpenSees executable file. This is the console to use to run the CSvRTHS.
+- `OpenFresco.exe`. Description: OpenFresco executable file. This is the console to use to run the CSvRTHS.
 
 ### Dynamic Link Libraries (DLL)
 
-- `File1.dll`. Description
-- `File2.dll`. Description
+A dynamic link library or more commonly DLL (dynamic-link library) is the term that refers to files with executable code that are loaded on demand of a program by the operating system. The files shown below are necessary for the correct execution of OpenFresco. In addition, if it is necessary to compile it or make modifications to its source code, they allow access to all source codes.
 
-### Other binary files
+- `libcrypto-1_1-x64.dll`.
+- `libssl-1_1-x64.dll`.
+- `msvcr120.dll`.
+- `OpenFresco.dll`.
+- `Pnpscr64.dll`.
+- `pnpscrd64.dll`.
+- `SubStructure.dll`.
+- `xpcapi.dll`.
 
-- `File1.xxx`. Description
-- `File2.xxx`. Description
+### Text File (txt)
+
+- `elcentro.txt`. Description
