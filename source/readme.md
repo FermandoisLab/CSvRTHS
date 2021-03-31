@@ -51,4 +51,4 @@ A dynamic link library or more commonly DLL (dynamic-link library) is the term t
 
 ### Text File (txt)
 
-- `elcentro.txt`. Description
+- `elcentro.txt`. Description: Text file containing El Centro's 1940 seismic record. This file is read by the numeric substructure model in OpenSees (SubEstNum). In case another seismic record wants to be used, you just have to create the text file and modify the name in the model in OpenSees by the name of the new file. You must know the time spacing of the record and the amount of data to perform enough integration steps to include the entire record.
