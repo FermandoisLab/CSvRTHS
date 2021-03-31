@@ -25,6 +25,7 @@ A C file is a source code file for a C or C ++ program. In this case this files 
 
 - `PredictorCorrector.c`. Description: File required for the implemented predictor-corrector method.
 - `SFun_OPFConnect.c`. Description: File required for communication between the model in Simulink (CSvRTHS_Client) and the model of the numerical substructure in OpenSees (SubEstNum)
+- `SFun_GenericClient.c`. Description: File required for communication between the model in Simulink (CSvRTHS_Client) and the model of the experimental substructure in OpenSees (ServerCol1, ServerCol2, ServerBeam1)
 - `TCPSocket.c`. Description: file required to communicate using the TCP/IP protocol.
 
 The header file is called a header file, in computer science, especially in the field of C and C ++ programming languages, to the file, usually in the form of source code, that the compiler automatically includes when processing some other source file.
