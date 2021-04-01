@@ -103,11 +103,11 @@ Below is an image of the implementation in simulink. This image corresponds to t
 
 A short description of each subsystem can be seen next here:
 
-Numerical Substructure: This block contains communication with the numerical substructure implemented in OpenSees (NumSubEst) through the OpenFresco Connect block. Additionally, inside is the implementation of the predictor-corrector method for the continuous generation of signals using polynomial extrapolation/interpolation. This algorithm is implemented in a StateFlow block in Simulink and can be obtained in the OpenFresco source code.
-Experimental Substructure:
-Adaptive Model-Based Compensation:
-Actuator Model:
-Sensors:
+- Numerical Substructure: This block contains communication with the numerical substructure implemented in OpenSees (NumSubEst) through the OpenFresco Connect block. Additionally, inside is the implementation of the predictor-corrector method for the continuous generation of signals using polynomial extrapolation/interpolation. This algorithm is implemented in a StateFlow block in Simulink and can be obtained in the OpenFresco source code.
+- Experimental Substructure: This block contains communication with the experimental substructure implemented in OpenSees (ServerCol1, ServerCol2, ServerBeam1) through TCP/IP communication. The GenericClient Element block is used for this.
+- Adaptive Model-Based Compensation: In this block is the implementation of the compensation method to be used. In this case the Adaptive Model-Based Compensation method.
+- Actuator Model: Inside this block is the implementation of the actuator model to be used in conjunction with its controller. In this case a P control is used.
+- Sensors: As its name indicates, the sensors are located inside. Being a virtual simulation, the function of these blocks is to introduce noise to the measurement to simulate a real sensor. This noise is generated from band-limited white noise.
 
 Additionally, the Real-Time Sync block is appreciated, this block synchronizes the Simulink model with the real-time kernel clock and ensures that it does not run faster than the user-specified simulation rate. 
 
