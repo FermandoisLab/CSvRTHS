@@ -99,6 +99,18 @@ where `sfun_name.c` is the name of the C source file. The mex command will gener
 
 ### Simulation
 
+Below is an image of the implementation in simulink. This image corresponds to the file CSvRTHS_Client. Although it is appreciated that the interconnections between the actors are simple, within these subsystems we worked with Goto and From blocks to send and receive signals. In this way, Simulink is seen to be cleaner, without so much connection by arrows.
+
+A short description of each subsystem can be seen next here:
+
+Numerical Substructure: This block contains communication with the numerical substructure implemented in OpenSees (NumSubEst) through the OpenFresco Connect block. Additionally, inside is the implementation of the predictor-corrector method for the continuous generation of signals using polynomial extrapolation/interpolation. This algorithm is implemented in a StateFlow block in Simulink and can be obtained in the OpenFresco source code.
+Experimental Substructure:
+Adaptive Model-Based Compensation:
+Actuator Model:
+Sensors:
+
+Additionally, the Real-Time Sync block is appreciated, this block synchronizes the Simulink model with the real-time kernel clock and ensures that it does not run faster than the user-specified simulation rate. 
+
 <img src="figures/Simulink.png" alt="Reference Structure" width="800"/>
 
 The implementation of CSvRTHS is illustrated in the next figure. Briefly, the first requirement is to start the ES-FE server, which is waiting for the resolution to start. Then, Simulink Client must be executed (The integration scheme used in Simulink was ode8 (Dormand-Prince)), which requests a displacement to OpenSees for the execution of the first temporary step. So finally, the OpenSees file (NS-FE Server) that contains the NS and where the integration of the equation of motion is performed is executed. An explicit integration scheme, as Newmark Explicit, is recommended. Here the sampling intervals used for the fast and slow processes are 1/1024 and 2/100 [s], respectively. To summarize, the loops need to be run from the inside to the outside layers: (1) ES-FE server (green); (2) Simulink client (orange); and (3) the NS-FE server (blue-gray).
