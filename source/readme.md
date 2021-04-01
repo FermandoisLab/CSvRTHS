@@ -34,6 +34,8 @@ The header file is called a header file, in computer science, especially in the 
 
 ### Executable files (EXE)
 
+In the field of computing .exe (from the English abbreviation executable) is an extension that refers to an executable file of relocatable code, that is, its memory addresses are relative
+
 - `OpenSees.exe`. Description: OpenSees executable file. This is the console to use to run the CSvRTHS.
 - `OpenFresco.exe`. Description: OpenFresco executable file. This is the console to use to run the CSvRTHS.
 
