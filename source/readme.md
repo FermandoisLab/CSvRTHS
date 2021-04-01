@@ -47,6 +47,8 @@ Some previous definitions:
 
 - Dynamic Link Library files are essentially a "guide" that stores information and instructions for executable files (EXE). These files were created so that multiple programs could share the same files, saving valuable memory allocation; therefore, it makes the equipment work more efficiently.
 
+The files uploaded to the repository are listed and explained below.
+
 - `libcrypto-1_1-x64.dll`. Desciption: Libcrypto-1_1-x64.dll is considered a type of OpenSSL library file and is considered a Win64 DLL (Dynamic Link Library) file.
 - `libssl-1_1-x64.dll`. Description: libssl-1_1-x64.dll is considered a type of OpenSSL library file and is considered a Win64 DLL (Dynamic Link Library) file.
 - `msvcr120.dll`. Description: Microsoft C Runtime Library files, such as msvcr120.dll, are considered a type of Win64 DLL (Dynamic Link Library) file.
