@@ -62,6 +62,14 @@ The files uploaded to the repository are listed and explained below.
 
 Since OpenFresco is taking advantage of and utilizing many existing OpenSees classes, the OpenSees source code needs to be installed and built prior to compiling and building OpenFresco. Finally, Tcl/Tk and OpenSSL need to be installed in order to build and execute OpenFresco.
 
+### Exp files (EXP)
+
+- `OpenFresco.exp`. Description: It is a symbol export file, a kind of developer file used by an Integrated Development Environment (IDE). This type of EXP file contains symbol table data that provides information about a code to support programs for building software. In computational terms, exporting a file consists of transforming data into a format that is compatible with other programs without losing information in the process.
+
+### Lib files (LIB)
+
+- `OpenFresco.lib`. Description: Files that contain the LIB file extension contain a library of static data information. The information in this file is associated with a specific computer application (OpenFresco). LIB files generally store the functions referenced by the application, which is then associated with the library.
+
 ### Text File (txt)
 
 - `elcentro.txt`. Description: Text file containing El Centro's 1940 seismic record. This file is read by the numeric substructure model in OpenSees (SubEstNum). In case another seismic record wants to be used, you just have to create the text file and modify the name in the model in OpenSees by the name of the new file. You must know the time spacing of the record and the amount of data to perform enough integration steps to include the entire record.
