@@ -39,16 +39,24 @@ The header file is called a header file, in computer science, especially in the 
 
 ### Dynamic Link Libraries (DLL)
 
-A dynamic link library or more commonly DLL (dynamic-link library) is the term that refers to files with executable code that are loaded on demand of a program by the operating system. The files shown below are necessary for the correct execution of OpenFresco. In addition, if it is necessary to compile it or make modifications to its source code, they allow access to all source codes.
+Some previous definitions:
 
-- `libcrypto-1_1-x64.dll`.
-- `libssl-1_1-x64.dll`.
-- `msvcr120.dll`.
-- `OpenFresco.dll`.
-- `Pnpscr64.dll`.
-- `pnpscrd64.dll`.
-- `SubStructure.dll`.
-- `xpcapi.dll`.
+- A dynamic link library or more commonly DLL (dynamic-link library) is the term that refers to files with executable code that are loaded on demand of a program by the operating system. The files shown below are necessary for the correct execution of OpenFresco. In addition, if it is necessary to compile it or make modifications to its source code, they allow access to all source codes.
+
+- OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+
+- Dynamic Link Library files are essentially a "guide" that stores information and instructions for executable files (EXE). These files were created so that multiple programs could share the same files, saving valuable memory allocation; therefore, it makes the equipment work more efficiently.
+
+- `libcrypto-1_1-x64.dll`. Desciption: Libcrypto-1_1-x64.dll is considered a type of OpenSSL library file and is considered a Win64 DLL (Dynamic Link Library) file.
+- `libssl-1_1-x64.dll`. Description: libssl-1_1-x64.dll is considered a type of OpenSSL library file and is considered a Win64 DLL (Dynamic Link Library) file.
+- `msvcr120.dll`. Description: Microsoft C Runtime Library files, such as msvcr120.dll, are considered a type of Win64 DLL (Dynamic Link Library) file.
+- `OpenFresco.dll`. Description: This file is necessary for the correct execution of OpenFresco. Similarly, it is necessary if what you want is to compile OpenFresco to make modifications to its source code.
+- `Pnpscr64.dll`. Description: This dll is associated with the use of Scramnet shared ram memory, for this simulation it is not used, but it must be included in the folder for the correct execution of OpenFresco.
+- `pnpscrd64.dll`. Description: This dll is associated with the use of Scramnet shared ram memory, for this simulation it is not used, but it must be included in the folder for the correct execution of OpenFresco.
+- `SubStructure.dll`. Description: dLL file associated with the generation of experimental elements in OpenSees. For more information on this, consult the OpenFresco command manual.
+- `xpcapi.dll`. Description: Non-system processes like xpcapi.dll originate from software you installed on your system. The xpcapi.dll is an executable file on your computer's hard drive. This file contains machine code.
+
+Since OpenFresco is taking advantage of and utilizing many existing OpenSees classes, the OpenSees source code needs to be installed and built prior to compiling and building OpenFresco. Finally, Tcl/Tk and OpenSSL need to be installed in order to build and execute OpenFresco.
 
 ### Text File (txt)
 
